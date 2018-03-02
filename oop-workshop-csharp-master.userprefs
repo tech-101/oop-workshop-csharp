@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{5653809A-4024-497E-93FA-86C945CC9EAD}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="oop-workshop-csharp-master/NetlightTech101OOP/Exercise1/CustomerService.cs">
+    <Files>
+      <File FileName="oop-workshop-csharp-master/Program.cs" Line="4" Column="2" />
+      <File FileName="oop-workshop-csharp-master/NetlightTech101OOP/Exercise1/Domain/Customer.cs" Line="2" Column="70" />
+      <File FileName="oop-workshop-csharp-master/NetlightTech101OOP/Exercise1/Domain/Order.cs" Line="2" Column="1" />
+      <File FileName="oop-workshop-csharp-master/NetlightTech101OOP/Exercise1/Domain/Product.cs" Line="9" Column="25" />
+      <File FileName="oop-workshop-csharp-master/NetlightTech101OOP/Exercise1/Infrastructure/CustomerRepository.cs" Line="5" Column="11" />
+      <File FileName="oop-workshop-csharp-master/NetlightTech101OOP/Exercise1/Infrastructure/OrderRepository.cs" Line="2" Column="1" />
+      <File FileName="oop-workshop-csharp-master/NetlightTech101OOP/Exercise1/Infrastructure/ProductRepository.cs" Line="30" Column="76" />
+      <File FileName="oop-workshop-csharp-master/NetlightTech101OOP/Exercise1/Infrastructure/SmtpMailClient.cs" Line="2" Column="1" />
+      <File FileName="oop-workshop-csharp-master/NetlightTech101OOP/Exercise1/CustomerService.cs" Line="68" Column="34" />
+      <File FileName="oop-workshop-csharp-master/test/Exercise1/CustomerServiceTest.cs" Line="2" Column="1" />
+      <File FileName="oop-workshop-csharp-master/NetlightTech101OOP/Exercise2/Support/EmptyInterface.cs" Line="1" Column="1" />
+      <File FileName="oop-workshop-csharp-master/NetlightTech101OOP/Exercise2/Support/TransferManager.cs" Line="1" Column="1" />
+      <File FileName="oop-workshop-csharp-master/NetlightTech101OOP/Exercise2/Support/UserManager.cs" Line="1" Column="1" />
+      <File FileName="oop-workshop-csharp-master/NetlightTech101OOP/Exercise2/Support/SmsHandler.cs" Line="1" Column="1" />
+      <File FileName="oop-workshop-csharp-master/NetlightTech101OOP/Exercise2/SmsHandler.cs" Line="1" Column="14" />
+      <File FileName="oop-workshop-csharp-master/NetlightTech101OOP/Exercise2/Support/SmsHandlerImpl.cs" Line="1" Column="1" />
+      <File FileName="oop-workshop-csharp-master/test/Exercise2/SmsHandlerTest.cs" Line="7" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.oop-workshop-csharp-master PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

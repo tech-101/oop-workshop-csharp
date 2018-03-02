@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="NetlightTech101OOP\" />
+    <Folder Include="test\" />
+    <Folder Include="NetlightTech101OOP\Exercise1\" />
+    <Folder Include="NetlightTech101OOP\Exercise2\" />
+    <Folder Include="test\Exercise1\" />
+    <Folder Include="test\Exercise2\" />
+    <Folder Include="NetlightTech101OOP\Exercise1\Domain\" />
+    <Folder Include="NetlightTech101OOP\Exercise1\Infrastructure\" />
+    <Folder Include="NetlightTech101OOP\Exercise2\Support\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="NetlightTech101OOP\Exercise1\Infrastructure\EmptyClass.cs" />
+    <Compile Remove="NetlightTech101OOP\Exercise2\Support\EmptyInterface.cs" />
+    <Compile Remove="NetlightTech101OOP\Exercise2\Support\SmsHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="test\Exercise2\com.netlight.tech101.oop.exercise2.SmsHandlerTest" />
+  </ItemGroup>
+</Project>
