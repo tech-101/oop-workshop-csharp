@@ -6,7 +6,7 @@ using oopworkshopcsharpmaster.NetlightTech101OOP.Exercise1.Domain;
 using oopworkshopcsharpmaster.NetlightTech101OOP.Exercise1.Infrastructure;
 using Xunit;
 
-namespace oopworkshopcsharpmaster.test.Exercise1
+namespace oop_workshop.Tests.Excercise1
 {
     public class CustomerServiceTest
     {
@@ -62,7 +62,7 @@ namespace oopworkshopcsharpmaster.test.Exercise1
             customerService.placeOrder(order);
             Money totalOrderCost = customerService.totalOrderCost(order);
 
-            Assert.Equal(new Money(CurrencyUnit.GBP, 40), totalOrderCost);
+            Assert.Equal(new Money(CurrencyUnit.EUR, 40), totalOrderCost);
 
             List<String> emails = smtpMailClient.getMails("woody.woodpecker@gmail.com");
         }

@@ -1,6 +1,8 @@
 ﻿using System;
 using oopworkshopcsharpmaster.NetlightTech101OOP.Exercise1.Infrastructure;
 using oopworkshopcsharpmaster.NetlightTech101OOP.Exercise1.Domain;
+using oopworkshopcsharpmaster.NetlightTech101OOP.Core;
+
 namespace oopworkshopcsharpmaster.NetlightTech101OOP.Exercise1
 {
     public class CustomerService
@@ -44,7 +46,7 @@ namespace oopworkshopcsharpmaster.NetlightTech101OOP.Exercise1
             return productRepository.findAll().Count;
         }
 
-        public Order createOrder(String customerId, String...productIds)
+        public Order createOrder(String customerId, String[] productIds)
         {
             Customer c = customerRepository.findById(customerId);
             Order order = new Order(c);
@@ -65,10 +67,10 @@ namespace oopworkshopcsharpmaster.NetlightTech101OOP.Exercise1
 
         public Money totalOrderCost(Order order)
         {
-            Money total = Money.zero(CurrencyUnit.EUR);
+            Money total = Money.Zero(CurrencyUnit.EUR);
             foreach (Product p in order.getProducts())
             {
-                total = total.plus(p.getPrice());
+                total = total.Plus(p.getPrice());
             }
             return total;
         }

@@ -3,7 +3,7 @@ using oopworkshopcsharpmaster.NetlightTech101OOP.Exercise2.Support;
 using oopworkshopcsharpmaster.NetlightTech101OOP.Exercise2;
 using Xunit;
 
-namespace oopworkshopcsharpmaster.test.Exercise2
+namespace oop_workshop.Tests.Excercise2
 {
     public class SmsHandlerTest
     {
