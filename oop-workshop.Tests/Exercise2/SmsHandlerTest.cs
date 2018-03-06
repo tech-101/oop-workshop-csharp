@@ -1,10 +1,10 @@
 ﻿using System;
 using oopworkshopcsharpmaster.NetlightTech101OOP.Exercise2.Support;
 using oopworkshopcsharpmaster.NetlightTech101OOP.Exercise2;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-namespace oopworkshopcsharpmaster.test.Exercise2
+using Xunit;
+
+namespace oop_workshop.Tests.Excercise2
 {
-  [TestClass]
     public class SmsHandlerTest
     {
         public SmsHandlerTest()
@@ -13,41 +13,41 @@ namespace oopworkshopcsharpmaster.test.Exercise2
 
         public static readonly String DEVICE_ID = "myDeviceId";
 
-    private SmsHandler smsHandler = new SmsHandlerImpl();
+        private SmsHandler smsHandler = new SmsHandlerImpl();
 
-        [TestMethod]
-    public void testBalanceCommand()
+        [Fact]
+        public void testBalanceCommand()
         {
             String response = smsHandler.handleSmsRequest("BALANCE", DEVICE_ID);
-            Assert.AreEqual("1500", response);
+            Assert.Equal("1500", response);
         }
 
-        [TestMethod]
-    public void testSendOk()
+        [Fact]
+        public void testSendOk()
         {
             String response = smsHandler.handleSmsRequest("SEND-100-FFRITZ", DEVICE_ID);
-            Assert.AreEqual("OK", response);
+            Assert.Equal("OK", response);
         }
 
-        [TestMethod]
-    public void testSendInsufficientFunds()
+        [Fact]
+        public void testSendInsufficientFunds()
         {
             String response = smsHandler.handleSmsRequest("SEND-100-FFRITZ", DEVICE_ID);
-            Assert.AreEqual("ERR – INSUFFICIENT FUNDS", response);
+            Assert.Equal("ERR – INSUFFICIENT FUNDS", response);
         }
 
-        [TestMethod]
-    public void testSendNoUser()
+        [Fact]
+        public void testSendNoUser()
         {
             String response = smsHandler.handleSmsRequest("SEND-100-FFRITZ", DEVICE_ID);
-            Assert.AreEqual("ERR – NO USER", response);
+            Assert.Equal("ERR – NO USER", response);
         }
 
-        [TestMethod]
-    public void testTotalSent()
+        [Fact]
+        public void testTotalSent()
         {
             String response = smsHandler.handleSmsRequest("TOTAL-SENT-FFRITZ", DEVICE_ID);
-            Assert.AreEqual("ERR – NO USER", response);
+            Assert.Equal("ERR – NO USER", response);
         }
     }
 }

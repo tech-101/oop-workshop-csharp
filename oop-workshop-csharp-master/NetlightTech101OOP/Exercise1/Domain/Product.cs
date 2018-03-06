@@ -1,4 +1,6 @@
 ﻿using System;
+using oopworkshopcsharpmaster.NetlightTech101OOP.Core;
+
 namespace oopworkshopcsharpmaster.NetlightTech101OOP.Exercise1.Domain
 {
     public class Product
